@@ -5,7 +5,7 @@ const feedbackList = document.getElementById("feedbackList");
 const viewFeedbackBtn = document.getElementById("viewFeedbackBtn");
 const message = document.getElementById("message");
 
-// Submit feedback
+
 feedbackForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -103,7 +103,6 @@ async function loadFeedback() {
     }
 }
 
-// Update total feedback and average rating
 function updateStats(feedbacks) {
     document.getElementById("totalFeedback").textContent =
         feedbacks.length;
@@ -117,7 +116,7 @@ function updateStats(feedbacks) {
         average.toFixed(1) + " ⭐";
 }
 
-// Delete feedback
+
 async function deleteFeedback(id) {
     const confirmed = confirm("Are you sure you want to delete this feedback?");
 
@@ -148,5 +147,5 @@ async function deleteFeedback(id) {
     }
 }
 
-// Automatically load feedback when page opens
+
 loadFeedback();

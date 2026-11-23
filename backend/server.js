@@ -10,12 +10,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Test API
+
 app.get("/", (req, res) => {
     res.send("FeedbackHub API is running!");
 });
 
-// POST: Save feedback
+
 app.post("/api/feedback", async (req, res) => {
     try {
         const { name, rating, comment } = req.body;
@@ -41,7 +41,7 @@ app.post("/api/feedback", async (req, res) => {
     }
 });
 
-// GET: Display all feedback
+
 app.get("/api/feedback", async (req, res) => {
     try {
         const feedbacks = await Feedback.find().sort({
@@ -61,7 +61,7 @@ app.get("/api/feedback", async (req, res) => {
     }
 });
 
-// DELETE: Remove feedback
+
 app.delete("/api/feedback/:id", async (req, res) => {
     try {
         const deletedFeedback = await Feedback.findByIdAndDelete(
@@ -86,13 +86,12 @@ app.delete("/api/feedback/:id", async (req, res) => {
     }
 });
 
-// Connect database
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log("MongoDB connected successfully!");
 
         app.listen(process.env.PORT || 9000, () => {
-            console.log("Server running on port 5000");
+            console.log("Server running on port 9000");
         });
     })
     .catch((error) => {
