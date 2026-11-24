@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:9000/api/feedback";
+const API_URL = "https://student-feedback-manager-1-sz15.onrender.com/api/feedback";
 
 const feedbackForm = document.getElementById("feedbackForm");
 const feedbackList = document.getElementById("feedbackList");
