@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -28,8 +27,6 @@ body {
     min-height: 100vh;
 }
 
-/* NAVBAR */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -58,15 +55,12 @@ body {
     color: var(--muted);
 }
 
-/* MAIN CONTAINER */
 
 .container {
     max-width: 1050px;
     margin: 55px auto;
     padding: 0 25px;
 }
-
-/* HERO SECTION */
 
 .hero {
     margin-bottom: 38px;
@@ -100,8 +94,6 @@ body {
     font-size: 16px;
     line-height: 1.7;
 }
-
-/* STATS */
 
 .stats {
     display: grid;
@@ -138,8 +130,6 @@ body {
     margin-top: 12px;
 }
 
-/* FORM AND FEEDBACK SECTIONS */
-
 .form-section,
 .feedback-section {
     background: var(--white);
@@ -158,7 +148,6 @@ body {
     margin-bottom: 24px;
 }
 
-/* FORM */
 
 form {
     display: flex;
@@ -201,7 +190,6 @@ textarea {
     resize: vertical;
 }
 
-/* BUTTONS */
 
 button,
 .main-link {
@@ -229,15 +217,11 @@ button:active {
     transform: scale(0.98);
 }
 
-/* MESSAGE */
-
 #message {
     margin-top: 16px;
     font-size: 14px;
     font-weight: 700;
 }
-
-/* FEEDBACK HEADING */
 
 .section-heading {
     display: flex;
@@ -255,8 +239,6 @@ button:active {
     color: var(--muted);
     font-size: 14px;
 }
-
-/* FEEDBACK CARDS */
 
 .feedback-card {
     position: relative;
@@ -303,8 +285,6 @@ button:active {
     color: white;
 }
 
-/* WELCOME PAGE */
-
 .welcome {
     max-width: 850px;
     margin: 145px auto;
@@ -315,8 +295,6 @@ button:active {
 .welcome .main-link {
     margin-top: 28px;
 }
-
-/* RESPONSIVE DESIGN */
 
 @media (max-width: 650px) {
     .navbar {
